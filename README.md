@@ -1,2 +1,2 @@
 # SheShield
-ensuring the safety and well-being of young women navigating public spaces alone, addressing key aspects such as secure transportation, emotional comfort, and awareness of potential risks.
+Ensuring the safety and well-being of young women navigating public spaces alone, addressing key aspects such as secure transportation, emotional comfort, and awareness of potential risks. The proposed solution involves the creation of dedicated safety communities where young women can report safety concerns, share information, and receive support. By fostering these communities, the project aims to enhance awareness and enable real-time response efforts, ultimately contributing to a safer and more informed environment.
