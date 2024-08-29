@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "- GET `/api/reports`\r     - Get all the reports\r     - Request body: _None_\r     - Response code: `200 OK` (success)\r     - Response body: Array of reports (id, type, description, lat, lng)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "sqlite3": "^5.1.6"
+  }
+}

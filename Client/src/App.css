@@ -1,0 +1,322 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+.container-fluid {
+  padding: 0 !important;
+}
+.navbar-component {
+  height: 10vh;
+  bottom: 0;
+  padding: '0';
+  padding-bottom: 2%;
+  background-color: white;
+}
+
+/* MAP component */
+.map-component {
+  height: 90vh;
+}
+
+/* SEARCH BAR component */
+.searchbar-container{
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+  background-color: white;
+  padding: 2%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+.searchbar-component {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.combobox-input{
+  width: inherit;
+  height: auto;
+}
+
+/* DISMISSABLE FEEDBACK POPUP */
+.dismissable-popup{
+  bottom: 20vh;
+  left: 1vw;
+  width: 98vw;
+  height: 15vh;
+  z-index: 102;
+}
+.dismissable-popup-error{
+  margin-top: 5vh;
+  width: 98vw;
+  height: 15vh;
+  z-index: 102;
+}
+
+/* NAVBAR component */
+.nav-item{
+  color: black;
+  
+}
+.active {
+  color: white;
+  background-color: black;
+  border-radius: 10%;
+}
+
+/* RECENT & SAVED ADDRESSES components*/
+.recentsearches-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.saved-addresses-container{
+  display: -webkit-inline-box;
+  width: 100%;
+  height: 10%;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+.saved-addresses-container::-webkit-scrollbar {
+  height: 1vh;
+}
+.saved-addresses-container::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 10px;
+}
+.saved-addresses-container::-webkit-scrollbar-track {
+  background-color: white;
+  border-radius: 10px;
+}
+.saved-address {
+  width: 40vw; /* Equal width for all boxes */
+  border: 1px solid #000; /* Border for visualization */
+  text-align: center; /* Center text */
+  height: 100%;
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  justify-content: center; /* Horizontal alignment */
+}
+.saved-address:hover {
+  width: 40vw; /* Equal width for all boxes */
+  border: 1px solid white; /* Border for visualization */
+  text-align: center; /* Center text */
+  height: 100%;
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  justify-content: center; /* Horizontal alignment */
+  background-color: black;
+  color: whitesmoke;
+  z-index: 101;
+}
+.recent-searches {
+  margin-top: 5%;
+  width: 100%;
+  height: 50vh;
+}
+.recent-searches p {
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+.recent-searches ul {
+  list-style: none;
+  padding: 0;
+}
+.recent-searches ul li {
+  cursor: pointer;
+  padding: 5%;
+  border-top: 1px solid #ccc;
+}
+.recent-searches ul li:hover {
+  background-color: #f5f5f5;
+}
+
+.customLocation::placeholder {
+  color: white;
+}
+
+/* Edit SAVED ADDRESS section */
+.edit-saved-address{
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  z-index: 150;
+  overflow: hidden;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.back-from-edit{
+  width: 100vw;
+  height: 5vh;
+  position: absolute;
+  top: 5vh;
+  left: 5vh;
+}
+.edit-address-title{
+  margin-top: 15vh;
+  height: 5vh;
+}
+.edit-address-content{
+  margin-top: 3vh;
+  width: 70vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1%;
+  border: 1px solid grey;
+  border-radius: 5%;
+  text-align: center;
+}
+.edit-address-buttons{
+  margin-top: 3vh;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 1%;
+}
+.edit-address-button {
+  flex: 1; /* Equal width for all boxes */
+  margin: 2%;
+}
+.edit-address-button-single {
+  width: inherit;
+}
+.delete-address-content{
+  margin-top: 3vh;
+  width: 70vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1%;
+  border: 1px solid grey;
+  border-radius: 5%;
+  text-align: center;
+}
+
+/* Add new SAVED ADDRESS section */
+.add-address-content{
+  margin-top: 3vh;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5%;
+  border: 1px solid grey;
+  border-radius: 5%;
+  text-align: center;
+}
+
+/* CHAT-LIST Section */
+.chat-container {
+  width: 100%;
+  height: 100vh;
+}
+.chat-container ul {
+  list-style: none;
+  padding: 0;
+}
+.div-li-flex {
+  cursor: pointer;
+  padding: 5%;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: 'center';
+  justify-content: 'space-between'
+}
+.chat-container ul li:hover {
+  background-color: #f5f5f5;
+}
+
+/* CHAT Section */ 
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 100%;
+}
+
+.chat-header-container{
+  position: fixed;
+  width: 100vw;
+  height: 15vh;
+  background-color: white;
+  padding: 5%;
+  border-bottom: 3px solid grey;
+  display: flex;
+}
+.chat-header-component {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.chat {
+  margin-top: 15vh;
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  margin: 8px 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-content {
+  border-radius: 8px;
+  position: relative;
+}
+
+.message-date {
+  font-size: 12px;
+  color: #888;
+  text-align: right; /* Align timestamp to the right */
+} 
+
+.message.sent {
+  background-color: #3D3B40;
+  align-self: flex-end;
+  color: whitesmoke;
+}
+
+.message.received {
+  background-color: #EAEAEA;
+  align-self: flex-start;
+}
+
+.message-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.fa-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
