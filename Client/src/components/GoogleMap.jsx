@@ -72,7 +72,7 @@ function GoogleMap(props) {
   }, [props.showFeedbackPopUp]);
 
   return (
-    <APIProvider className='map-component' apiKey='AIzaSyA1V5q0PXE9kfL6ZqE6hYtEWu9dYjn-YTY' libraries={["places"]}>
+    <APIProvider className='map-component' apiKey='' libraries={["places"]}>
       {
         loaded && !props.showDeleteReportCard && !props.showDirections && !props.openInfo ?
           <div ref={searchbarRef} className='searchbar-container'>
